@@ -92,13 +92,20 @@ const Header = () => {
       </button>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div id="mobile-menu" ref={menuRef} role="dialog" aria-modal="true" className="md:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-black bg-opacity-95 flex flex-col items-center justify-center z-40">
-          <nav className="flex flex-col items-center justify-center h-full gap-6">
-            {navLinks}
-          </nav>
-        </div>
-      )}
+      <div
+        id="mobile-menu"
+        ref={menuRef}
+        role="dialog"
+        aria-modal={isMenuOpen}
+        aria-hidden={!isMenuOpen}
+        className={`md:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-black bg-opacity-95 flex flex-col items-center justify-center z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <nav className="flex flex-col items-center justify-center h-full gap-6">
+          {navLinks}
+          <div className="mt-8">
+            <ThemeToggleButton />
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };

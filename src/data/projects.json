@@ -6,7 +6,7 @@
     "technologies": ["React", "Tailwind CSS", "JavaScript"],
     "githubUrl": "https://github.com/camiloGHS21/portafolioDev",
     "liveUrl": "/",
-    "image": "portafolio.png"
+    "image": "portafolio.webp"
   },
   {
   "id": 2,
@@ -15,7 +15,7 @@
   "technologies": ["React", "Tailwind CSS", "JavaScript"],
   "githubUrl": "https://github.com/camiloGHS21/SistemaSporteDeDecisionesWeb",
   "liveUrl": "https://sistema-sporte-de-decisiones.ghs21.online/",
-  "image": "Comparador_de_paises_dss.png"
+  "image": "Comparador_de_paises_dss.webp"
 }, 
 {
   "id":3,
@@ -24,7 +24,7 @@
   "technologies": ["Spring Boot", "Java", "PostgreSQL"],
   "githubUrl": "https://github.com/camiloGHS21/SistemaSporteDeDecisionesApi",
   "liveUrl": "https://api.cgh1.com/swagger-ui/index.html",
-  "image": "Comparador_de_paises_dss_backend.png"
+  "image": "Comparador_de_paises_dss_backend.webp"
 
 }
 ]

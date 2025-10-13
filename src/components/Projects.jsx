@@ -8,7 +8,19 @@ const Projects = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTech, setSelectedTech] = useState('All');
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 3;
+  const [projectsPerPage, setProjectsPerPage] = useState(3);
+
+  useEffect(() => {
+    const getProjectsPerPage = () => window.innerWidth < 768 ? 1 : 3;
+    setProjectsPerPage(getProjectsPerPage());
+
+    const handleResize = () => {
+      setProjectsPerPage(getProjectsPerPage());
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     setProjects(projectsData);
@@ -51,7 +63,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="min-h-screen snap-start px-4 sm:px-8 md:px-12 lg:px-20 pt-28 pb-10">
-      <div className="max-w-5xl mx-auto w-full">
+      <div className="max-w-4xl mx-auto w-full">
         <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-8">Mis Proyectos</h2>
 
         {/* Filters and Search */}
@@ -68,9 +80,9 @@ const Projects = () => {
                 key={tech}
                 onClick={() => setSelectedTech(tech)}
                 aria-pressed={selectedTech === tech}
-                className={`px-4 py-1.5 text-sm rounded-full border transition-all duration-300 ${
+                className={`px-4 py-1.5 text-sm rounded-full border transition-all duration-300 hover:scale-105 ${
                   selectedTech === tech
-                    ? 'bg-pink-500 border-pink-500 text-white'
+                    ? 'bg-pink-500 border-pink-500 text-white scale-105'
                     : 'bg-transparent dark:border-[#2a2a2a] border-gray-300 dark:text-gray-300 text-gray-700 dark:hover:bg-[#1a1a1a] hover:bg-gray-200'
                 }`}>
                 {tech}
@@ -88,6 +100,7 @@ const Projects = () => {
             <ProjectCard
               key={project.id}
               project={project}
+              className={projectsPerPage === 1 ? 'max-w-sm mx-auto' : ''}
               style={{ animation: `fadeIn 0.5s ease-in-out ${index * 100}ms forwards`, opacity: 0 }}
             />
           ))}

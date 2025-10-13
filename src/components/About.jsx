@@ -40,14 +40,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="h-screen snap-start flex items-center justify-center mt-12 px-4 sm:px-8 md:px-12 lg:px-20 ">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+    <section id="about" className="min-h-screen snap-start flex items-center justify-center py-20 px-4 sm:px-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
         
         {/* Left Column - Image */}
         <div className="lg:col-span-1 flex justify-center">
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-lg shadow-pink-500/20 border-4 border-pink-500/50">
+          <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg shadow-pink-500/20 border-4 border-pink-500/50 transition-all duration-300 hover:scale-105 hover:shadow-pink-500/40">
             <img 
-              src="/profile-pic.png" 
+              src="/profile-pic.webp" 
               alt="Foto de perfil de Camilo" 
               className="w-full h-full object-cover"
             />
@@ -55,13 +55,13 @@ const About = () => {
         </div>
 
         {/* Right Column - Text and Skills */}
-        <div className="lg:col-span-2">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 text-center lg:text-left">Sobre Mí</h2>
-          <p className="text-lg md:text-xl dark:text-gray-300 text-gray-600 leading-relaxed mb-10">
+        <div className="lg:col-span-2 text-center lg:text-left">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">Sobre Mí</h2>
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
             Soy un desarrollador web full-stack con una pasión por construir y diseñar experiencias digitales. Mi objetivo es crear aplicaciones web que no solo sean funcionales y escalables, sino también intuitivas y atractivas para el usuario. Estoy en constante aprendizaje, explorando nuevas tecnologías y mejorando mis habilidades para enfrentar nuevos desafíos.
           </p>
           
-          <h3 className="text-1xl md:text-2xl font-semibold mb-6 text-center lg:text-left">Habilidades</h3>
+          <h3 className="text-xl sm:text-2xl font-semibold mb-6">Habilidades</h3>
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
             {skills.map(skill => {
               const IconComponent = iconComponents[skill.icon];
