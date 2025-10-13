@@ -1,0 +1,17 @@
+import React from 'react';
+
+const MailSendIcon = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      className={className}
+    >
+      <path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.223V6h16zM4 18V9.044l7.386 5.762a.998.998 0 0 0 1.228 0L20 9.044V18H4z"></path>
+    </svg>
+  );
+};
+
+export default MailSendIcon;

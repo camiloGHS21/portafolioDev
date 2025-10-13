@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Portafolio Personal",
+    "description": "Mi portafolio personal para mostrar mis proyectos y habilidades. Construido con React y Tailwind CSS.",
+    "technologies": ["React", "Tailwind CSS", "JavaScript"],
+    "githubUrl": "https://github.com/camiloGHS21/portafolioDev",
+    "liveUrl": "/",
+    "image": "portafolio.png"
+  },
+  {
+  "id": 2,
+  "title": "DSS Comparador de Países Frontend",
+  "description": "Un sistema de soporte a decisiones (DSS) que permite comparar países utilizando análisis de datos y visualizaciones interactivas.",
+  "technologies": ["React", "Tailwind CSS", "JavaScript"],
+  "githubUrl": "https://github.com/camiloGHS21/SistemaSporteDeDecisionesWeb",
+  "liveUrl": "https://sistema-sporte-de-decisiones.ghs21.online/",
+  "image": "Comparador_de_paises_dss.png"
+}, 
+{
+  "id":3,
+  "title": "DSS Comparador de Países Backend",
+  "description": "Backend del sistema de soporte a decisiones (DSS) para comparar países, proporcionando una API RESTful para gestionar y servir datos.",
+  "technologies": ["Spring Boot", "Java", "PostgreSQL"],
+  "githubUrl": "https://github.com/camiloGHS21/SistemaSporteDeDecisionesApi",
+  "liveUrl": "https://api.cgh1.com/swagger-ui/index.html",
+  "image": "Comparador_de_paises_dss_backend.png"
+
+}
+]
