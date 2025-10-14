@@ -30,7 +30,7 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label={link.name}
-                className="transition-transform duration-300 hover:scale-125 hover:text-pink-400"
+                className="transition-transform duration-300 hover:scale-125 hover:text-sky-400"
               >
                 <IconComponent className="fill-current w-6 h-6" />
               </a>

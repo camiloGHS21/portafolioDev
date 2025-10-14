@@ -63,18 +63,18 @@ const Contact = () => {
             {/* Form fields... */}
             <div className="space-y-2">
               <label className="text-sm font-semibold dark:text-gray-300 text-gray-700" htmlFor="user_name">Nombre</label>
-              <input id="user_name" type="text" name="user_name" required className="w-full dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-lg px-4 py-3 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"/>
+              <input id="user_name" type="text" name="user_name" required className="w-full dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-lg px-4 py-3 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all duration-300"/>
             </div>
             <div className="space-y-2">
               <label className="text-sm font-semibold dark:text-gray-300 text-gray-700" htmlFor="user_email">Email</label>
-              <input id="user_email" type="email" name="user_email" required className="w-full dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-lg px-4 py-3 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"/>
+              <input id="user_email" type="email" name="user_email" required className="w-full dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-lg px-4 py-3 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all duration-300"/>
             </div>
             <div className="space-y-2">
               <label className="text-sm font-semibold dark:text-gray-300 text-gray-700" htmlFor="message">Mensaje</label>
-              <textarea id="message" name="message" required rows="4" className="w-full dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-lg px-4 py-3 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300 resize-none"></textarea>
+              <textarea id="message" name="message" required rows="4" className="w-full dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-lg px-4 py-3 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all duration-300 resize-none"></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" disabled={isSending} className="w-full sm:w-auto border dark:border-[#2a2a2a] border-gray-300 py-3 px-12 rounded-full font-semibold tracking-wider transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-red-500 via-pink-500 to-red-500 bg-[length:200%_200%] bg-left hover:bg-right">
+              <button type="submit" disabled={isSending} className="w-full sm:w-auto border dark:border-[#2a2a2a] border-gray-300 py-3 px-12 rounded-full font-semibold tracking-wider transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r dark:from-gray-600 dark:via-blue-800 from-blue-50 via-blue-5000 bg-[length:200%_200%] bg-left hover:bg-right">
                 {isSending ? 'Enviando...' : 'Enviar Mensaje'}
               </button>
             </div>
@@ -89,7 +89,7 @@ const Contact = () => {
           <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
             <div className="flex gap-6">
               {socialLinks.map(link => (
-                <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name} className="transition-transform duration-300 hover:scale-125 hover:text-pink-400">
+                <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name} className="transition-transform duration-300 hover:scale-125 hover:text-blue-400">
                   <box-icon type='logo' name={link.icon} class="fill-current"></box-icon>
                 </a>
               ))}

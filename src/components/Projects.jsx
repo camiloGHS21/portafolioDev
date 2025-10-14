@@ -71,7 +71,7 @@ const Projects = () => {
           <input
             type="text"
             placeholder="Buscar proyecto..."
-            className="w-full sm:w-1/2 dark:bg-[#1a1a1a] bg-gray-200 dark:border-[#2a2a2a] border-gray-300 rounded-full px-4 py-2 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-pink-500"
+            className="w-full sm:w-1/2 dark:bg-[#1a1a1a] bg-gray-200 dark:border-[#2a2a2a] border-gray-300 rounded-full px-4 py-2 dark:text-white text-black focus:outline-none focus:ring-2 focus:ring-sky-400"
             onChange={e => setSearchTerm(e.target.value)}
           />
           <div className="flex flex-wrap justify-center gap-2">
@@ -82,7 +82,7 @@ const Projects = () => {
                 aria-pressed={selectedTech === tech}
                 className={`px-4 py-1.5 text-sm rounded-full border transition-all duration-300 hover:scale-105 ${
                   selectedTech === tech
-                    ? 'bg-pink-500 border-pink-500 text-white scale-105'
+                    ? 'bg-sky-400 border-sky-500 dark:border-sky-5 text-white scale-105'
                     : 'bg-transparent dark:border-[#2a2a2a] border-gray-300 dark:text-gray-300 text-gray-700 dark:hover:bg-[#1a1a1a] hover:bg-gray-200'
                 }`}>
                 {tech}

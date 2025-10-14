@@ -45,7 +45,7 @@ const About = () => {
         
         {/* Left Column - Image */}
         <div className="lg:col-span-1 flex justify-center">
-          <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg shadow-pink-500/20 border-4 border-pink-500/50 transition-all duration-300 hover:scale-105 hover:shadow-pink-500/40">
+          <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg shadow-sky-500/20  transition-all duration-300 hover:scale-105 hover:shadow-sky-400/40">
             <img 
               src="/profile-pic.webp" 
               alt="Foto de perfil de Camilo" 
@@ -66,7 +66,7 @@ const About = () => {
             {skills.map(skill => {
               const IconComponent = iconComponents[skill.icon];
               return (
-                <div key={skill.name} className="dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 transition-all duration-300 hover:bg-pink-500/10 hover:border-pink-500/50 hover:scale-105 cursor-pointer">
+                <div key={skill.name} className="dark:bg-[#1a1a1a] bg-gray-100 dark:border-[#2a2a2a] border-gray-200 rounded-full px-4 py-2 flex items-center gap-2 transition-all duration-300 hover:bg-blue-500/10 hover:border-sky-500/50 hover:scale-105 cursor-pointer">
                   <IconComponent className={`w-6 h-6 ${skill.colorClass}`} />
                   <span className="dark:text-gray-300 text-gray-700 text-sm sm:text-base">{skill.name}</span>
                 </div>

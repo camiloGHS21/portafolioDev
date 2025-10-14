@@ -17,7 +17,7 @@ function App() {
     <>
      
      {/* Blur Effect */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-purple-400 via-pink-500 to-red-500 opacity-30 filter blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-full h-full -z-10 bg-gradient-to-b dark:from-gray-600 dark:via-blue-800 from-blue-50 via-blue-500 filter blur-3xl"></div>
 
       {/* Header */}
       <Header />
