@@ -64,13 +64,13 @@ const Header = () => {
 
   const navLinks = (
     <>
-      <a href="#projects" onClick={() => setIsMenuOpen(false)} className="text-base tracking-wider transition-colors hover:text-red-400 text-lg md:text-xl lg:text-2xl font-light m-4 z-50">
+      <a href="#projects" onClick={() => setIsMenuOpen(false)} className="text-base tracking-wider transition-colors hover:text-blue-400 text-lg md:text-xl lg:text-2xl font-light m-4 z-50">
         Proyectos
       </a>
-      <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-base tracking-wider transition-colors hover:text-red-400 text-lg md:text-xl lg:text-2xl font-light m-4 z-50">
+      <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-base tracking-wider transition-colors hover:text-blue-400 text-lg md:text-xl lg:text-2xl font-light m-4 z-50">
         Sobre mí
       </a>
-      <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-base tracking-wider transition-colors hover:text-red-400 text-lg md:text-xl lg:text-2xl font-light m-4 z-50">
+      <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-base tracking-wider transition-colors hover:text-blue-400 text-lg md:text-xl lg:text-2xl font-light m-4 z-50">
         Contacto
       </a>
     </>
